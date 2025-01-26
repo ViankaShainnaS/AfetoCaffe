@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-scroll'
+import {Link} from 'react-router-dom'
 import gambarMenu from '../images/gambarMenu1.png'
 import gambarMenu2 from '../images/gambarMenu2.png'
 import gambarMenu3 from '../images/gambarMenu3.png'
@@ -7,16 +7,13 @@ import gambarMenu4 from '../images/gambarMenu4.png'
 
 function Header() {
   return (
-    <div id='main'>
+    <div id='main' className=''>
      <div className='pr-heading'>
-      <h1>Afeto</h1>
+      <h1 className='text-orange-400 text-3xl'>Afeto</h1>
       <h2><span>Coffe and Eatery</span></h2>
-      {/* <p className='details'>Afeto Café merupakan kafe bergaya Santorini yang menghadirkan suasana khas pulau Yunani 
-        dengan desain arsitektur dominan warna putih dan biru.Menyajikan berbagai makanan khas Indonesia, salad segar, dan minuman eksotis.
-        Afeto Café merupakan tempat yang cocok untuk bersantai, berfoto, atau berkumpul bersama teman dan keluarga. </p> */}
       <div className='header-btns'>
-        <Link to='/order'>
-          <a href='#'className='header-btn'>Order Now {'>>'} </a>
+        <Link to='/' className='header-btn'>
+          Get in Touch {'>>'}
         </Link>
       </div>
      </div>

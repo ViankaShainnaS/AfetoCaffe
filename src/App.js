@@ -1,25 +1,25 @@
 import React from "react";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Order from "./components/Order";
+import Home from "./components/Home";
+import Header from "./components/Header";    
+import Menu from "./components/Menu";
 import Write from "./components/Write";
+import About from "./components/Information";
+import Classic from "./components/Classic";
+import Food from './components/Food'
+import './style.css'
 
 function App() {
   return (
-    <div className="App">
-      {/* <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Header/>} />
-          <Route path="/order" element={<Order/>} />
-        </Routes>
-      </Router> */}
-      <Navbar />
-      <Header/>
-      <Order/>
-    </div>
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/classic" element={<Classic/>} />
+        <Route path="/classic/food" element={<Food/>} />
+      </Routes>
+    </Router>
   );
 }
 
