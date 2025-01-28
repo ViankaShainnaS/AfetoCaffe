@@ -12,6 +12,7 @@ import Navbar from './Navbar'
 const Home = () => {
   return (
     <div id='home'>
+      <Navbar/>
     <Header/>
     <Menu/>
     <About/>

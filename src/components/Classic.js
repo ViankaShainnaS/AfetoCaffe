@@ -15,9 +15,9 @@ function Classic() {
             <img src={Panah}/>
           </Link>
         </div>
-        {/* <div className='logo'>
+        <div className='logo'>
             <img src={logoBiru}/>
-        </div> */}
+        </div>
         <div className='menu-cat'>
           <h1>Menu Category</h1>
         </div>

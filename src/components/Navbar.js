@@ -41,7 +41,7 @@ function Navbar() {
             <li><a href="/gallery">Gallery</a></li>
 
         </ul>
-        <Link to='account' className='account'>
+        <Link to='login' className='account'>
             <img src={accountLogo} to="/" alt=''></img>
         </Link>
     </nav>

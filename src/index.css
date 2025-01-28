@@ -1,9 +1,12 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -864,8 +867,8 @@ nav .menu-btn,
          }
          #cMenu{
             width:100%;
-            height: 797px;
-            top: 90px;
+            height: 100%;
+            top: 0px;
             background-color: #C0EDED;
             position: absolute;
             z-index: 0;
@@ -965,5 +968,343 @@ nav .menu-btn,
             margin-top: 40px;
             /* margin-left:10px; */
         }
-         
+        #food{
+            width:100%;
+            height: 625%;
+            top: 0px;
+            background-color: #C0EDED;
+            position: absolute;
+            z-index: 0;
+        }
+        #food .arrow-food{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        #food .arrow-food img {
+            margin-left: 150px;
+            margin-top: 105px;
+            width: 50px;
+            height: 45px;
 
+        }
+        .arrow-food h1{
+            margin-left: 20px;
+            font-family: "Righteous", serif;
+            font-size: 40px;
+            color: #3f7465;
+            font-weight: 600;
+            /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); */
+            margin-top: 100px;
+            /* letter-spacing: 2px; */
+        }
+        #food .section {
+            position: sticky;
+            height: 605px;
+            margin-left: 150px;
+            margin-top: 60px;
+            /* background-color: #000000; */
+        }
+        .section h2{
+            font-family: "Righteous", serif;
+            font-size: 35px;
+        } 
+        .section .section-ul{
+            width: 145px;
+            height: 2px;
+            background-color: #ffffff;
+            margin-top: -25px;
+            margin-left: -13px;
+        }
+        .x-scroll {
+            display: flex;
+            overflow-x: auto;
+            /* white-space: nowrap; */
+            gap: 30px; /* Memberi jarak antar item */
+            margin-inline-end: 50px;
+            padding: 40px; 
+            scroll-behavior: smooth; /* Efek scroll yang halus */
+          }
+          
+          .main-menu {
+            flex: 0 0 auto; 
+            width: 380px;
+            height: 470px;
+            background-color: #fafffec0;
+            /* display: flex; */
+            position: sticky;
+            justify-content: center;
+            align-items: center;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: column;
+          }
+          .main-menu:hover{
+           border: 5px solid #3e8277;
+           box-shadow: 5px 10px 5px #81B4B4;
+            transition: all ease-in-out 0.3s;
+          }
+          .main-menu img{
+            width: 360px;
+            height: 219px;
+            margin-top: 0px;
+          }
+          .main-menu h1{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: 'Prompt',serif;
+            font-weight: 500;
+            font-size: 30px;
+            /* text-shadow: 3px 3px 5px #0000006e; */
+          }
+          .main-menu p{
+            display: flex;
+            font-size: 18px;
+            font-family: "Prompt", serif;
+
+          }
+          .main-menu .price{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 230px;
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: "Prompt", serif;
+            background-color: #98cbc1;
+            border-radius: 50px;
+            width: 105px;
+            height: 47px;
+          }
+          #login{
+            /* position: absolute;
+            display: flex;
+            flex-direction: column; */
+            width: 100%;
+            height: 100%;
+          }
+          #login .side-decor{
+            /* position: sticky; */
+            /* overflow-y: hidden; */
+            overflow-x: hidden;
+            
+          }
+          #login .side-decor .rectangle1{
+            width: 850px;
+            height: 1300px;
+            background-color: #498876;
+            transform: rotate(-22deg);
+            margin-left: 930px;
+            margin-top: -230px;
+            box-shadow: -10px 0px 15px  #000000c9;
+          }
+          #login .side-decor .rectangle2{
+            width: 720px;
+            height: 1300px;
+            background-color: #C0EDED;
+            transform: rotate(-22deg);
+            margin-left: 912px;
+            margin-top: -83rem;
+            box-shadow: 0px -10px 15px  #000000ca;
+          }
+          .side-decor img{
+            width: 110px;
+            height: 102px;
+            margin-top: 420px;
+            transform: rotate(22deg);
+            margin-left: 570px;
+            /* margin-top:-100rem; */
+          }
+          .side-decor .rectangle2 h3{
+            margin-left: 200px;
+            margin-top: 150px;
+            font-family: 'Raleway', serif;
+            font-size: 70px;
+            font-weight: 600;
+            color: #498876;
+            transform: rotate(22deg);
+          }
+          .side-decor .rectangle2 h1{
+            margin-left: 275px;
+            margin-top:  -30px;
+            font-family: "Righteous",serif;
+            font-size: 102px;
+            transform: rotate(22deg);
+            color: #1B3E44;
+          }
+          .side-decor .rectangle2 .to-regist{
+            margin-top: 130px;
+            margin-left: 230px;
+            transform: rotate(22deg);
+            /* justify-content: center;
+            align-items: center;
+            position: absolute; */
+          }
+          .side-decor .rectangle2 .to-regist p{
+            font-family: "Raleway", serif;
+            font-size: 18px;
+          }
+          .side-decor .rectangle2 .to-regist .regist-btn{
+            background-color: #CEF1F1;
+            width: 110px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 70px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            /* padding: 5px; */
+          }
+          .side-decor .rectangle2 .to-regist .regist-btn p{
+            font-family: "Raleway", serif;
+            font-size:16px;
+            color: #000000;
+          }
+          #login .login-form{
+            margin-top: -55%;
+            margin-left: 1%;
+            height: 600px;
+            width: 900px;
+            /* background-color: #000000; */
+          }
+          .login-form h1{
+            display: flex;
+            justify-content: center;
+            font-family: "Raleway", serif;
+            font-size: 55px;
+            font-weight: 400;
+            margin-left: -110px;
+          }
+          .login-form .email{
+            margin-top: 50px;
+            margin-left: 16%;
+            height: 78px;
+            background-color: #B7E8E8;
+            width: 500px;
+            border-radius: 40px;
+            padding: 30px;
+            font-size: 20px;
+            font-family: "Raleway", serif;
+          }
+        .email::placeholder{
+            font-family: "Raleway", serif;
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgba(73, 136, 118, 0.5);
+          }
+        .email-form {
+            display: flex; 
+        }
+        .email-icon{
+            margin-left: -60px;
+            margin-top: 50px;
+        }
+        .login-form .password{
+            margin-top: 50px;
+            margin-left: 16%;
+            height: 78px;
+            background-color: #B7E8E8;
+            width: 500px;
+            border-radius: 40px;
+            padding: 30px;
+            display: flex;
+            font-size: 20px;
+            font-family: "Raleway", serif;
+          }
+        .password::placeholder{
+            font-family: "Raleway", serif;
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgba(73, 136, 118, 0.5);
+          }
+        .pass-form{
+            display: flex;
+        }
+        .pass-icon{
+            margin-left: -70px;
+            margin-top: 40px
+        }
+        .login-btn{
+            background-color: #1B3E44;
+            width: 155px;
+            height: 45px;
+            border-radius: 20px;
+            font-family: "Raleway", serif;
+            font-size: 22px;
+            color: #ffffff;
+            margin-left: 35%;
+            margin-top: 100px;
+            box-shadow: 0px 4px 4px #000000;
+        }
+        .login-btn:hover{
+            cursor: pointer;
+        }
+        .passconfirm-form{
+            margin-left: 300px;
+            display: flex;
+            position: absolute;
+        }
+        .passconfirm-form .passconfirm{
+            margin-top: 50px;
+            margin-left: -150px;
+            height: 78px;
+            background-color: #B7E8E8;
+            width: 500px;
+            border-radius: 40px;
+            padding: 30px;
+            font-size: 20px;
+            font-family: "Raleway", serif;
+          }
+        .passconfirm::placeholder{
+            font-family: "Raleway", serif;
+            font-size: 20px;
+            margin-left: 20px;
+            color: rgba(73, 136, 118, 0.5);
+          }
+        .passconfirm-form .pass-icon{
+            margin-left: -75px;
+            margin-top: 50px
+        }
+          #login .regist-form{
+            margin-top: -55%;
+            margin-left: 1%;
+            height: 600px;
+            width: 900px;
+            /* background-color: #000000; */
+          }
+          .regist-form h1{
+            display: flex;
+            justify-content: center;
+            font-family: "Raleway", serif;
+            font-size: 55px;
+            font-weight: 400;
+            margin-left: -110px;
+          }
+          .regist-form .email{
+            margin-top: 50px;
+            margin-left: 16%;
+            height: 78px;
+            background-color: #B7E8E8;
+            width: 500px;
+            border-radius: 40px;
+            padding: 30px;
+            font-size: 20px;
+            font-family: "Raleway", serif;
+          }
+          .regist-form .password{
+            margin-top: 50px;
+            margin-left: 16%;
+            height: 78px;
+            background-color: #B7E8E8;
+            width: 500px;
+            border-radius: 40px;
+            padding: 30px;
+            display: flex;
+            font-size: 20px;
+            font-family: "Raleway", serif;
+          }
+          .regist-form .login-btn{
+            margin-top:200px;
+          }
