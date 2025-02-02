@@ -27,7 +27,7 @@ const Menu = () =>  {
             <div className='cat'>
               <img src={catering}></img>
               <div className='cat-btns'>
-                <Link to='catMenu' className='cat-btn'>
+                <Link to='catering' className='cat-btn'>
                   Catering {'>'}
                 </Link>
               </div>

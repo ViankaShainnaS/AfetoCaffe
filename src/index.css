@@ -22,6 +22,7 @@ body{
 #home{
     width: 100%;
     height: 4110px;
+    margin-top: 0px;
 }
 ul{
     list-style: none;
@@ -121,7 +122,7 @@ nav{
 	position: fixed;
 	width: 100%;
     height: 90px;
-    margin-top: 0px;
+    margin-top: -0px;
 	z-index: 2;
     background-color: #81B4B4;
     /* box-shadow:5px 10px 30px #858585; */
@@ -137,7 +138,7 @@ nav ul{
     padding: 2px
 }
 .active{
-    background-color: #FF1414;
+    background-color: #81B4B4;
     color:#ffffff;
 	box-shadow: 5px 10px 30px rgba(198, 64, 64, 0.411);
 	transition: all ease 0.2s;
@@ -1306,5 +1307,184 @@ nav .menu-btn,
             font-family: "Raleway", serif;
           }
           .regist-form .login-btn{
-            margin-top:200px;
+            margin-top: 200px;
           }
+
+        #snack{
+            width:100%;
+            height: 330%;
+            top: 0px;
+            background-color: #C0EDED;
+            position: absolute;
+            z-index: 0;
+        }
+        #snack .arrow-food{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        #snack .arrow-food img {
+            margin-left: 150px;
+            margin-top: 105px;
+            width: 50px;
+            height: 45px;
+
+        }
+        #snack .section {
+            position: sticky;
+            height: 605px;
+            margin-left: 150px;
+            margin-top: 60px;
+            /* background-color: #000000; */
+        }
+        #drink{
+            width:100%;
+            height: 700%;
+            top: 0px;
+            background-color: #C0EDED;
+            position: absolute;
+            z-index: 0;
+        }
+        #drink .arrow-food{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        #drink .arrow-food img {
+            margin-left: 150px;
+            margin-top: 105px;
+            width: 50px;
+            height: 45px;
+
+        }
+        #drink .section {
+            position: sticky;
+            height: 605px;
+            margin-left: 150px;
+            margin-top: 60px;
+            /* background-color: #000000; */
+        }
+        #catering{
+            width:100%;
+            height: 100%;
+            top: 0px;
+            background-color: #C0EDED;
+            position: absolute;
+            z-index: 0;
+        }
+        #catering .arrow-food{
+            display: inline-flex;
+            flex-direction: row;
+        }
+        #catering .arrow-food img {
+            margin-left: 150px;
+            margin-top: 105px;
+            width: 50px;
+            height: 45px;
+
+        }
+        #catering .section {
+            position: sticky;
+            height: 605px;
+            margin-left: 150px;
+            margin-top: 60px;
+            /* background-color: #000000; */
+        }
+        #catering .cat-title{
+            margin-left: 40% ;
+            margin-top: 20px;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #catering .cat-title h1{
+            font-family: "Righteous", serif;
+            font-size: 50px;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            color: #1A6251;
+        }
+        #catering .cat-title p{
+            font-family: "Prompt", serif;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin-top: -10px;
+        }
+        .sec-cat{
+            justify-content: space-evenly;
+            display: flex;
+            grid-template-columns: auto ;
+            align-items: center;
+            margin-top: 300px;
+        }
+        .sec-cat .isi-menu{
+            width: 500px;
+            height: 250px;
+            background-color: rgba(250, 255, 254, 0.74);
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 20px;
+        }
+        .sec-cat .isi-menu h1{
+            font-family: "Prompt", serif;
+            font-size: 30px;
+            margin-top: 20px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .sec-cat .isi-menu p{
+            font-family: "Prompt";
+            font-size: 16px;
+            margin-top: -20px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .sec-cat .isi-menu .harga{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: #809ea1;
+            border-radius: 30px;
+            position: relative;
+            width: 105px;
+            height: 41px;
+            margin-top: 30px;
+        }
+        .sec-cat .isi-menu .harga p{
+            font-family: "Righteous",serif;
+            font-size: 17px;
+            margin-top: 15px;
+        
+        }
+        #information{
+            position: absolute;
+            z-index: 1  ;
+            height: 100%;
+            width: 100%;
+            top: 200%;
+            justify-content: center;
+            align-items: center;
+            display: grid;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #81B4B4;
+        }
+        .information-box{
+            margin-top: -400px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            height: 400px;
+            width: 725px;
+            background-color: #5f919140;
+            justify-content: baseline;
+            align-items: baseline;
+            display: grid;
+            border-radius: 20px;
+        }
+        .information-box p{
+            font-family: "prompt", serif;
+            font-size: 40px;
+            margin-left: 20px;
+        }
