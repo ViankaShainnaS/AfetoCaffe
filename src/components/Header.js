@@ -12,9 +12,9 @@ function Header() {
       <h1 className='text-orange-400 text-3xl'>Afeto</h1>
       <h2><span>Coffe and Eatery</span></h2>
       <div className='header-btns'>
-        <Link to='/' className='header-btn'>
+        <button  className='header-btn'>
           Get in Touch {'>>'}
-        </Link>
+        </button>
       </div>
      </div>
      <div className='gallery'>

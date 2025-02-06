@@ -3,6 +3,8 @@ import Header from './Header'
 import Menu from './Menu'
 import About from './Information'
 import Navbar from './Navbar'
+import Gallery from './Gallery'
+import Reservation from './Reservation'
 
 
 
@@ -13,6 +15,8 @@ const Home = () => {
     <Header/>
     <Menu/>
     <About/>
+    <Gallery/>
+    <Reservation/>
 
     </div>
     // <Router>

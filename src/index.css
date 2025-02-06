@@ -6,7 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ID+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
@@ -1468,23 +1471,234 @@ nav .menu-btn,
             top: 200%;
             justify-content: center;
             align-items: center;
-            display: grid;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
             background-color: #81B4B4;
+            margin-right: 100px;
+        }
+        #information .wave{
+            width: 1632px;
+            position: absolute;
+            top: -50px;
         }
         .information-box{
-            margin-top: -400px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 300px;
             height: 400px;
             width: 725px;
-            background-color: #5f919140;
-            justify-content: baseline;
-            align-items: baseline;
+            background-color: #416464;
+            justify-content: center;
+            align-items: center;
             display: grid;
-            border-radius: 20px;
+            border: 10px solid #582E1E;
+            border-radius: 15px;
+            position: absolute;
         }
-        .information-box p{
-            font-family: "prompt", serif;
+        .information-box .open{
+            font-family: "Playwrite ID Guides", serif;
+            font-size: 30px;
+            color: #ffffffc7;
+            margin-top: 0px;
+        }
+        .information-box .close{
+            font-family: "Playwrite ID Guides", serif;
+            font-size: 30px;
+            color: #ffffffc7;
+            margin-top: -70px;
+        }
+        #information .judul{
+            font-family: "Righteous", serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 40px;
-            margin-left: 20px;
+            margin-top: 0px;
+            z-index: 10;
+            margin-top: -300px;
+            position: absolute;
         }
+        #gallery{
+            position: absolute;
+            background-color: #C0EDED;
+            height: 100%;
+            width: 100%;
+            top: 300%;
+        }
+        #gallery .gallery-txt{
+            height: 114px;
+            width: 300px;
+            background-color: #a2dada;
+            border-radius: 40px;
+            /* border: 2px solid #000000   ; */
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            margin: 50px;
+        }
+        .gallery-txt h2{
+            font-family: 'Righteous', serif;
+            font-size: 35px;
+            margin-left: 50px;
+            display: grid;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+        }
+
+        #gallery .gallery{
+            margin-top: 0px;
+            height: 650px;
+            width: 100%;
+            margin-left: 0px;
+        }
+        #gallery .gallery .grid{
+            height: auto;
+            margin-top: 30px;
+            display: flex;
+            margin-inline: 50px;
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            /* grid-template-rows: repeat(2, 1fr); */
+            /* overflow-inline: auto;
+            direction: rtl; */
+        }
+        #gallery .gallery .grid .photo{
+            width: 27%;
+            height:27%;
+        }
+        #reservation{
+            width:100%;
+            height: 450px;
+            top: 400%;
+            background-color: #000000;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('./images/aft.png');
+            position: absolute;
+        }
+        #reservation h1{
+            font-family: "Prompt", serif;
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 100px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #reservation .resev{
+            background-color: #0000007c;
+            width: 100%;
+            height: 450px;
+            top: 0px;
+            position: absolute;
+            z-index: 0;
+        }
+        #reservation .resev a{
+            width:80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 47%;
+        }
+
+        #reservation .footer{
+            width: 1632px;
+            height: 220px;
+            background-color: #C0EDED;
+            position: absolute;
+            top: 100%;
+            display: grid;
+        }
+        #reservation .footer .logo-afeto img{
+            width: 186px;
+            height: 186px;
+            margin-left:50px;
+            margin-top: 20px;
+        }
+        #reservation .footer .info{
+            width: 1387px;
+            height: 220px;
+            position: absolute;
+            /* background-color: #ffffff; */
+            display:grid;
+            margin-left: 15%;
+        }
+        .footer .info .address{
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            /* position: absolute; */
+            /* margin-left: -30%; */
+            /* margin-top: -100px; */
+            /* background-color: #ffffff; */
+        }
+        .info .address img{
+            width: 35px;
+            height: 35px;
+            margin-top: 25px;
+            position: absolute;
+        }
+        .info .address h6{
+            margin-left: 80px;
+            font-family: 'Roboto', serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        .footer .info .telp{
+            display: flex;
+            flex-direction: column;
+            margin-top: -40px;
+            margin-left: 55px;
+            /* background-color: #ffffff; */
+        }
+        .info .telp img{
+            width: 35px;
+            height: 35px;
+            margin-top: 25px;
+            position: absolute;
+        }
+        .info .telp h6{
+            margin-left: 70px;
+            font-family: 'Roboto', serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        .footer .info .instagram{
+            display: flex;
+            flex-direction: column;
+            margin-top: -40px;
+            margin-left: 55px;
+        }
+        .info .instagram img{
+            width: 35px;
+            height: 35px;
+            margin-top: 25px;
+            position: absolute;
+        }
+        .info .instagram h6{
+            margin-left: 70px;
+            font-family: 'Roboto', serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        .footer .copy-right{
+           margin-top: -40px;
+           position: relative;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .footer .copy-right p{
+            font-family: "Roboto", serif;
+            font-size: 13px;
+            color: #00000080;
+        }
+
+
+        
+        

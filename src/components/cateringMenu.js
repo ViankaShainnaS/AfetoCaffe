@@ -1,7 +1,6 @@
 import React from 'react'
 import Panah from '../images/panah kiri.png'
 import { Link } from 'react-router-dom'
-import Menu from '../images/menu.png'
 
 
 

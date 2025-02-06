@@ -9,6 +9,7 @@ import Register from "./components/Register"
 import Drink from './components/Drink'
 import Catering from './components/cateringMenu'
 import './style.css'
+import Reservation from "./components/Reservation";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/classic/drink" element={<Drink/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/regist" element={<Register/>}/>
+        <Route path="/resev" element={<Reservation/>}/>
       </Routes>
     </Router>
   );
