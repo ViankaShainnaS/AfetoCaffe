@@ -1,12 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Logo from '../images/biru2.png'
 import Email from '../images/Icon.svg'
 import Password from '../images/iconpass.svg'
 import {Link} from 'react-router-dom'
+import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { auth, db } from '../firebase'
+import {setDoc, doc,} from 'firebase/firestore'
 
 
 function Register() {
-
+    const [email, setEmail]= useState("")
+    const [password, setPassword]= useState("")
+    const [confirmPass, setConfirmPass] = useState("")
+  
+      const handleRegister=async(e)=>{
+        e.preventDefault()
+        try{
+         await createUserWithEmailAndPassword(auth,email,password);
+         const user= auth.currentUser;
+         console.log(user);
+         if(confirmPass!==password){
+          alert('Konfirmasi password anda berbeda, coba cek kembali!')
+         } else {
+          await setDoc(doc(db,"Users", user.uid),{
+            email: user.email
+          })
+          // console.log("Pengguna Berhasil di Daftarkan");
+          alert("Pengguna Berhasil di Daftarkan")
+        }
+        } catch (error) {
+          console.log(error.message);
+          alert(error.message)
+        }
+      }
   return (
     <section id="login">
       <div className='side-decor'>
@@ -27,18 +53,18 @@ function Register() {
       <form onSubmit='' className='regist-form'>
         <h1>Registration</h1>
         <div className='email-form'>
-          <input className='email' type='email' placeholder='Email'></input>
+          <input className='email' type='email' placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)}></input>
           <img src={Email} className='email-icon'/>
         </div>
         <div className='pass-form'>
-          <input className='password' type='password' placeholder='Password'></input>
+          <input className='password' type='password' placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)}></input>
           <img src={Password} className='pass-icon'/>
         </div>
         <div className='passconfirm-form'>
-          <input className='passconfirm' type='password' placeholder='Confirm your password here'></input>
+          <input className='passconfirm' type='password' placeholder='Confirm your password here' value={confirmPass} onChange={(e)=> setConfirmPass(e.target.value)}></input>
           <img src={Password} className='pass-icon'/>
         </div>
-          <button onClick='' className="login-btn">Regist</button>
+          <button onClick={handleRegister} className="login-btn">Regist</button>
       </form>
     </section>
   )

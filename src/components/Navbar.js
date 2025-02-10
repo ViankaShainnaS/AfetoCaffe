@@ -38,7 +38,7 @@ function Navbar() {
             <li><a href="/">Home</a></li>
             <li><a href="#menu">Menu's</a></li>
             <li><a href="#information">Information</a></li>
-            <li><a href="/#gallery">Gallery</a></li>
+            <li><a href="#gallery">Gallery</a></li>
 
         </ul>
         <Link to='login' className='account'>

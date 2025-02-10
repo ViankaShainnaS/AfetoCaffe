@@ -4,6 +4,7 @@ import gambarMenu from '../images/gambarMenu1.png'
 import gambarMenu2 from '../images/gambarMenu2.png'
 import gambarMenu3 from '../images/gambarMenu3.png'
 import gambarMenu4 from '../images/gambarMenu4.png'
+import Menu from './Menu'
 
 function Header() {
   return (
@@ -12,9 +13,9 @@ function Header() {
       <h1 className='text-orange-400 text-3xl'>Afeto</h1>
       <h2><span>Coffe and Eatery</span></h2>
       <div className='header-btns'>
-        <button  className='header-btn'>
+        <a href="/#menu" className='header-btn'>
           Get in Touch {'>>'}
-        </button>
+        </a>
       </div>
      </div>
      <div className='gallery'>

@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from "./components/Home";
+import Menu from './components/Menu'
 import Classic from "./components/Classic";
 import Food from './components/Food'
 import Snack from './components/Snack'
@@ -10,6 +11,8 @@ import Drink from './components/Drink'
 import Catering from './components/cateringMenu'
 import './style.css'
 import Reservation from "./components/Reservation";
+import Admin from "./components/Admin/Admin";
+import EditCatering from './components/Admin/editCatering'
 
 
 function App() {
@@ -25,6 +28,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/regist" element={<Register/>}/>
         <Route path="/resev" element={<Reservation/>}/>
+        <Route path="/editCatering" element={<EditCatering/>}/>
+        <Route path="/menu" element={<Menu/>}/>
       </Routes>
     </Router>
   );

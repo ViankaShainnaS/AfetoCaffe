@@ -1,12 +1,30 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import Logo from '../images/biru2.png'
 import Email from '../images/Icon.svg'
 import Password from '../images/iconpass.svg'
 import {Link} from 'react-router-dom'
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from '../firebase'  
 
 
 function Login() {
 
+  const [email, setEmail]= useState("")
+  const [password, setPassword]= useState("")
+
+  const handleSubmit=async(e)=>{
+    e.preventDefault()
+    try {
+      await signInWithEmailAndPassword(auth, email, password)
+      console.log("Berhasil melakukan login")
+      window.location.href = "/profile"
+      alert("Berhasil melakukan login")
+    } catch (error) {
+      console.log(error.message)
+
+      alert(error.message)
+    }
+  }
   return (
     <section id="login">
       <div className='side-decor'>
@@ -27,14 +45,14 @@ function Login() {
       <form onSubmit='' className='login-form'>
         <h1>Login</h1>
         <div className='email-form'>
-          <input className='email' type='email' placeholder='Email'></input>
+          <input className='email' type='email' placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)}></input>
           <img src={Email} className='email-icon'/>
         </div>
         <div className='pass-form'>
-          <input className='password' type='password' placeholder='Password'></input>
+          <input className='password' type='password' placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)}></input>
           <img src={Password} className='pass-icon'/>
         </div>
-          <button onClick='' className="login-btn">Login</button>
+          <button onClick={handleSubmit} className="login-btn">Login</button>
       </form>
     </section>
   )
