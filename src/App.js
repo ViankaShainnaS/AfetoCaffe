@@ -11,7 +11,7 @@ import Drink from './components/Drink'
 import Catering from './components/cateringMenu'
 import './style.css'
 import Reservation from "./components/Reservation";
-import Admin from "./components/Admin/Admin";
+import Admin from "./components/Admin/menuAdmin";
 import EditCatering from './components/Admin/editCatering'
 
 
@@ -28,8 +28,8 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/regist" element={<Register/>}/>
         <Route path="/resev" element={<Reservation/>}/>
-        <Route path="/editCatering" element={<EditCatering/>}/>
-        <Route path="/menu" element={<Menu/>}/>
+        <Route path="/menu/editCatering" element={<EditCatering/>}/>
+        <Route path="/menu" element={<Admin/>}/>
       </Routes>
     </Router>
   );

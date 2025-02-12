@@ -17,8 +17,13 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, email, password)
       console.log("Berhasil melakukan login")
-      window.location.href = "/profile"
+      if(email == "admin@gmail.com" && password == "123456"){
+        window.location.href = "/menu"
+        
+      } else {
+      window.location.href = "/"
       alert("Berhasil melakukan login")
+      }
     } catch (error) {
       console.log(error.message)
 
