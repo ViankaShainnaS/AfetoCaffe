@@ -1,35 +1,38 @@
-import React, {useEffect,useState} from 'react'
+import React, { useState } from 'react'
 import Logo from '../images/biru2.png'
 import Email from '../images/Icon.svg'
 import Password from '../images/iconpass.svg'
 import {Link} from 'react-router-dom'
 import { signInWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '../firebase'  
+import { auth } from '../firebase'
 
 
 function Login() {
-
   const [email, setEmail]= useState("")
   const [password, setPassword]= useState("")
+  const hasAnyRole = (roles) => {
+    const user = auth.currentUser;
+    if (!user) 
+    return roles.includes("admin"); // Gantilah dengan metode yang benar sesuai data Anda.
+  };
 
   const handleSubmit=async(e)=>{
     e.preventDefault()
     try {
       await signInWithEmailAndPassword(auth, email, password)
       console.log("Berhasil melakukan login")
-      if(email == "admin@gmail.com" && password == "123456"){
-        window.location.href = "/menu"
-        
-      } else {
-      window.location.href = "/"
+      if (email== 'admin123@gmail.com' && password== '12345678'){
+      window.location.href = "/menu"}
+      else{
+      window.location.href = "/"}
       alert("Berhasil melakukan login")
-      }
     } catch (error) {
       console.log(error.message)
 
-      alert(error.message)
+      alert("Coba cek kembali email atau password anda!")
     }
   }
+
   return (
     <section id="login">
       <div className='side-decor'>
@@ -47,7 +50,7 @@ function Login() {
         </div>
         </div>
 
-      <form onSubmit='' className='login-form'>
+      <form onSubmit={handleSubmit} className='login-form'>
         <h1>Login</h1>
         <div className='email-form'>
           <input className='email' type='email' placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)}></input>
@@ -57,7 +60,7 @@ function Login() {
           <input className='password' type='password' placeholder='Password' value={password} onChange={(e)=> setPassword(e.target.value)}></input>
           <img src={Password} className='pass-icon'/>
         </div>
-          <button onClick={handleSubmit} className="login-btn">Login</button>
+          <button onClick='' className="login-btn">Login</button>
       </form>
     </section>
   )

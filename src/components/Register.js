@@ -23,7 +23,7 @@ function Register() {
        console.log(user);
        if(confirmPass!==password){
         alert('Konfirmasi password anda berbeda, coba cek kembali!')
-       }else {
+       } else {
         await setDoc(doc(db,"Users", user.uid),{
           email: user.email
         })

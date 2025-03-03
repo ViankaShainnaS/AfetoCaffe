@@ -12,13 +12,17 @@ function Food() {
             <img src={Panah}/>
             <h1>Food Category</h1>
         </Link>
+        <Link to='/reservation'className='order-btn'>
+          <h4>Order Now</h4>
+        </Link>
+
         <div className='section'>
           <h2>Brunch</h2>
           <div className='section-ul'></div>
           <div className='x-scroll'>
               <div className='main-menu'>
                 <img src={Menu}></img>
-                <h1>Nama</h1>
+                <h1>Club Sandwich</h1>
                 <p>deskripsi</p>
                 <div className='price'>100 CK</div>
               </div>

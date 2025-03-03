@@ -14,7 +14,7 @@ const Sidebar = () => {
       </div>
       <div className='menu-admin'>
         <ul>
-          <li ><a href="/editMenu"><img src={menuIcon}></img>Menu</a></li>
+          <li ><a href="/menu"><img src={menuIcon}></img>Menu</a></li>
           <li><a href="/editInformation"><img src={informationIcon}></img>Information</a></li>
           <li><a href="/editGallery"><img src={galleryIcon}></img>Gallery</a></li>
           <li><a href="/editComments"><img src={commentsIcon}></img>Comments<></></a></li>

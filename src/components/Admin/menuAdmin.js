@@ -22,7 +22,7 @@ function Admin () {
         <section id='admin-page'>
             <Sidebar/>
             <Link to='' className="profile">
-                <h4>vianka@gmail.com</h4>
+                <h4>admin123@gmail.com</h4>
                 <img src={account}></img>
             </Link>
             <div className="option">
